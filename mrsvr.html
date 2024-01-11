@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marusaba.net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('space_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        select {
+            padding: 12px;
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        select:hover {
+            cursor: pointer;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+
+        .fa-minecraft {
+            font-size: 36px;
+            color: #ffcc00;
+        }
+
+        .server-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><i class="fas fa-minecraft"></i> marusaba.net</h1>
+    <p>Select Minecraft Edition:</p>
+    <select onchange="location = this.value;">
+        <option value="#" selected disabled>Select Edition</option>
+        <option value="java.html">Java版</option>
+        <option value="bedrock.html">統合版</option>
+    </select>
+</header>
+
+
+<!-- 余白に追加される画像 -->
+<img src="https://media.discordapp.net/attachments/1092809854793568378/1194998462824054875/image.png?ex=65b2640b&is=659fef0b&hm=9e270ed6b39e2d30411fbd0d18bb1ffa2898ed84c279b21d95682263d56514d2&=&format=webp&quality=lossless&width=720&height=405" alt="Minecraft Server Image" class="server-image">
+
+<div class="footer">
+    <!-- ここにフッターのコンテンツを追加できます -->
+</div>
+
+</body>
+</html>
